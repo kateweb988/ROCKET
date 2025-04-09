@@ -1,0 +1,200 @@
+body
+   font-family: 'Inter Tight', sans-serif
+   background: #ffff
+   color: rgb(11, 24, 39)
+   font-size: 14px
+   font-weight: 400
+   line-height: 130%
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $blue
+.blue
+   color: $blue
+.green 
+   color: $green
+.container
+   padding: 0 15px
+   max-width: 1346px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex, .q
+   display: flex
+.body-wrap
+   overflow: visible
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   color: rgb(11, 24, 39)
+   font-family: 'AA Stetica'
+   font-size: 60px
+   font-weight: 700
+   letter-spacing: -0.15rem
+   line-height: 100%
+   margin: 0
+h2 
+   margin: 0
+   color: rgb(11, 24, 39)
+   font-size: 48px
+   font-weight: 700
+   line-height: 100%
+   font-family: 'AA Stetica'
+   letter-spacing: -0.12rem
+.sub 
+   display: flex
+   align-items: center
+   justify-content: center
+   width: max-content
+   height: 48px
+   padding: 0px 16px 0px 12px
+   border-radius: 12px
+   background: rgb(232, 237, 244)
+   color: rgb(11, 24, 39)
+   font-size: 14px
+   font-weight: 400
+   line-height: 130%
+   margin-bottom: 24px
+   img 
+      margin-right: 15px
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg, rect, line, circle
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $blue
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $blue 
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $blue
+.popup__bg, .info__scroll, .calc__three, .calc__three2, .calc__three3, .calc__three4, .calc__three5, .menu5, .menu5__scroll, .arcticmodal-container
+   scrollbar-width: thin
+   scrollbar-color: transparent transparent
+.city-list::-webkit-scrollbar-track
+   background: transparent
+   width: 0
+.city-list::-webkit-scrollbar-thumb
+   width: 2px
+.city-list
+   scrollbar-width: thin
+   scrollbar-color: transparent transparent
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 7px
+   width: 7px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $blue
+   border-radius: 6px
+.button 
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.5s
+   box-sizing: border-box
+   width: max-content
+   padding: 0 16px
+   height: 48px
+   border-radius: 12px
+   background: $blue
+   color: rgb(255, 255, 255)
+   font-size: 16px
+   font-weight: 700
+   line-height: 130%
+   border: 1px solid $blue
+   vertical-align: middle 
+   position: relative 
+   z-index: 1 
+   -webkit-backface-visibility: hidden 
+   -moz-osx-font-smoothing: grayscale 
+   letter-spacing: 0.03rem
+   span 
+      transition: 0.5s
+   &:hover 
+      color: transparent
+      background: white
+      .svg 
+         path 
+            stroke: $blue
+   .svg 
+      margin-left: 29px
+.button::after  
+   content: attr(data-text)
+   position: absolute
+   width: 100%
+   height: 100%
+   top: 13px
+   left: 1rem
+   opacity: 0
+   color: #3f51b5
+   -webkit-transform: translate3d(0, 25%, 0)
+   transform: translate3d(0, 25%, 0)
+.button > span  
+   display: flex
+.button:after  
+	color: $blue
+.button::after,
+.button > span  
+   -webkit-transition: -webkit-transform 0.4s, opacity 0.4s
+   transition: transform 0.4s, opacity 0.4s
+   transition: 0.4s
+   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1)
+.button:hover::after  
+   opacity: 1
+   -webkit-transform: translate3d(0, 0, 0)
+   transform: translate3d(0, 0, 0)
+.button:hover > span  
+   opacity: 0
+   -webkit-transform: translate3d(0, -25%, 0)
+   transform: translate3d(0, -25%, 0)
+

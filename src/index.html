@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+	<title>Рокет клининг</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- Favicon -->
+	<!-- <link rel="icon" href="img/fav.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/fav.png" type="image/x-icon"> -->
+	<!-- OG -->
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<h2 style="text-align: center; margin: 40px auto; color: black">
+		Pages
+	</h2>
+	<ul class="mm" style="display: flex; max-width: 800px; margin: 0 auto 50px; flex-wrap: wrap;">
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="main.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Главная</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto 40px;">
+			<a href="services.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Услуги</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="services-item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Услуга</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="contacts.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Контакты</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="text.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Текст</a>
+		</li>
+	</ul>
+	<div class="d-flex"
+		style="justify-content: center; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
+		<a href="#" class="a1 button" data-text="Оставьте заявку" style="margin: 20px;">
+			Оставьте заявку
+		</a>
+		<a href="#" class="a2 button" data-text="Compare" style="margin: 20px;">
+			Compare
+		</a>
+		<a href="#" class="a3 button" data-text="Выберите город" style="margin: 20px;">
+			Выберите город
+		</a>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call">
+			<div class="box-modal__close articmodal-close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup-call__box">
+
+				<h2 class="popup__name">
+					Оставьте заявку
+				</h2>
+				<form action="success.php" class="order__form js-form" id="popupResult" method="post">
+					<input type="text" placeholder="Имя" class="form__field" required="" name="name">
+					<input type="tel" placeholder="Телефон" class="form__field tel" required="" name="tel">
+					<button class="btn button order__btn" data-text="Отправить">
+						Отправить
+					</button>
+					<p class="order__policy">
+						Нажимая кнопку «отправить», вы даёте согласие <br> на <a href="#" target="_blank"> политику
+							обработки персональных данных</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call2">
+			<div class="box-modal__close articmodal-close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup-call__box">
+
+				<section class="info" id="info">
+					<div class="container">
+						<div class="sub">
+							<img src="img/sub.svg" alt="">Сравнение
+						</div>
+						<h2>
+							Что входит в уборку офисов
+						</h2>
+						<div class="tabs">
+							<div class="tabs__nav d-flex">
+								<a href="#" class="tabs__btn tabs__btn_active">
+									Комнаты и коридоры
+								</a>
+								<a href="#" class="tabs__btn">
+									Ванная и туалет
+								</a>
+								<a href="#" class="tabs__btn">
+									Кухня
+								</a>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__pane   tabs__pane_show">
+									<div class="info__scroll">
+										<table>
+											<thead>
+												<tr>
+													<td>
+														Тип уборки1
+													</td>
+													<td>
+														Поддерживающая
+													</td>
+													<td>
+														Генеральная
+													</td>
+													<td>
+														После ремонта
+													</td>
+													<td>
+														После ремонта <br> с мебелью
+													</td>
+													<td>
+														После <br> дезинфекции
+													</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														Протираем пыль: с фасадов мебели, с внешних поверхностей и открытых полок
+														на уровне
+														вытянутой руки
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Протираем бытовую технику снаружи
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем фартук на кухне, плиту, столешницу
+														<div class="tooltip">
+															<img src="img/ic3.svg" class="svg" alt="Иконка">
+															<div class="tooltip-text">Клинер протрёт пыль на вертикальных
+																и горизонтальных
+																поверхностях в зоне доступности вытянутой руки: кухонном гарнитуре,
+																навесных
+																полках, стеллажах и этажерках с комнатными растениями. Очистит от пыли
+																кухонную
+																вытяжку снаружи.</div>
+														</div>
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем и продезенфицируем все кафельные поверхности на уровне вытянутой руки
+														в уборной
+														и в ванной комнате
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем и продезинифицируем унитаз, раковину, биде, ванну, смесители,
+														сантехнику
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем полы, плинтуса
+														<div class="tooltip">
+															<img src="img/ic3.svg" class="svg" alt="Иконка">
+															<div class="tooltip-text">Клинер протрёт пыль на вертикальных
+																и горизонтальных
+																поверхностях в зоне доступности вытянутой руки: кухонном гарнитуре,
+																навесных
+																полках, стеллажах и этажерках с комнатными растениями. Очистит от пыли
+																кухонную
+																вытяжку снаружи.</div>
+														</div>
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Зеркало в ванной
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Вынесем мусор до 5 кг (1 пакет)
+														<div class="tooltip">
+															<img src="img/ic3.svg" class="svg" alt="Иконка">
+															<div class="tooltip-text">Клинер протрёт пыль на вертикальных
+																и горизонтальных
+																поверхностях в зоне доступности вытянутой руки: кухонном гарнитуре,
+																навесных
+																полках, стеллажах и этажерках с комнатными растениями. Очистит от пыли
+																кухонную
+																вытяжку снаружи.</div>
+														</div>
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Дополнительные работы:
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё кухонного гарнитура
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё холодильника
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё духового шкафа
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё вытяжки
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<div class="info__scroll">
+										<table>
+											<thead>
+												<tr>
+													<td>
+														Тип уборки2
+													</td>
+													<td>
+														Поддерживающая
+													</td>
+													<td>
+														Генеральная
+													</td>
+													<td>
+														После ремонта
+													</td>
+													<td>
+														После ремонта <br> с мебелью
+													</td>
+													<td>
+														После <br> дезинфекции
+													</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														Протираем пыль: с фасадов мебели, с внешних поверхностей и открытых полок
+														на уровне
+														вытянутой руки
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Протираем бытовую технику снаружи
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем фартук на кухне, плиту, столешницу
+														<div class="tooltip">
+															<img src="img/ic3.svg" class="svg" alt="Иконка">
+															<div class="tooltip-text">Клинер протрёт пыль на вертикальных
+																и горизонтальных
+																поверхностях в зоне доступности вытянутой руки: кухонном гарнитуре,
+																навесных
+																полках, стеллажах и этажерках с комнатными растениями. Очистит от пыли
+																кухонную
+																вытяжку снаружи.</div>
+														</div>
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем и продезенфицируем все кафельные поверхности на уровне вытянутой руки
+														в уборной
+														и в ванной комнате
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем и продезинифицируем унитаз, раковину, биде, ванну, смесители,
+														сантехнику
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем полы, плинтуса
+														<div class="tooltip">
+															<img src="img/ic3.svg" class="svg" alt="Иконка">
+															<div class="tooltip-text">Клинер протрёт пыль на вертикальных
+																и горизонтальных
+																поверхностях в зоне доступности вытянутой руки: кухонном гарнитуре,
+																навесных
+																полках, стеллажах и этажерках с комнатными растениями. Очистит от пыли
+																кухонную
+																вытяжку снаружи.</div>
+														</div>
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Зеркало в ванной
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Вынесем мусор до 5 кг (1 пакет)
+														<div class="tooltip">
+															<img src="img/ic3.svg" class="svg" alt="Иконка">
+															<div class="tooltip-text">Клинер протрёт пыль на вертикальных
+																и горизонтальных
+																поверхностях в зоне доступности вытянутой руки: кухонном гарнитуре,
+																навесных
+																полках, стеллажах и этажерках с комнатными растениями. Очистит от пыли
+																кухонную
+																вытяжку снаружи.</div>
+														</div>
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Дополнительные работы:
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё кухонного гарнитура
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё холодильника
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё духового шкафа
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё вытяжки
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tabs__pane">
+									<div class="info__scroll">
+										<table>
+											<thead>
+												<tr>
+													<td>
+														Тип уборки3
+													</td>
+													<td>
+														Поддерживающая
+													</td>
+													<td>
+														Генеральная
+													</td>
+													<td>
+														После ремонта
+													</td>
+													<td>
+														После ремонта <br> с мебелью
+													</td>
+													<td>
+														После <br> дезинфекции
+													</td>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														Протираем пыль: с фасадов мебели, с внешних поверхностей и открытых полок
+														на уровне
+														вытянутой руки
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Протираем бытовую технику снаружи
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем фартук на кухне, плиту, столешницу
+														<div class="tooltip">
+															<img src="img/ic3.svg" class="svg" alt="Иконка">
+															<div class="tooltip-text">Клинер протрёт пыль на вертикальных
+																и горизонтальных
+																поверхностях в зоне доступности вытянутой руки: кухонном гарнитуре,
+																навесных
+																полках, стеллажах и этажерках с комнатными растениями. Очистит от пыли
+																кухонную
+																вытяжку снаружи.</div>
+														</div>
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем и продезенфицируем все кафельные поверхности на уровне вытянутой руки
+														в уборной
+														и в ванной комнате
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем и продезинифицируем унитаз, раковину, биде, ванну, смесители,
+														сантехнику
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic2.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Помоем полы, плинтуса
+														<div class="tooltip">
+															<img src="img/ic3.svg" class="svg" alt="Иконка">
+															<div class="tooltip-text">Клинер протрёт пыль на вертикальных
+																и горизонтальных
+																поверхностях в зоне доступности вытянутой руки: кухонном гарнитуре,
+																навесных
+																полках, стеллажах и этажерках с комнатными растениями. Очистит от пыли
+																кухонную
+																вытяжку снаружи.</div>
+														</div>
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Зеркало в ванной
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Вынесем мусор до 5 кг (1 пакет)
+														<div class="tooltip">
+															<img src="img/ic3.svg" class="svg" alt="Иконка">
+															<div class="tooltip-text">Клинер протрёт пыль на вертикальных
+																и горизонтальных
+																поверхностях в зоне доступности вытянутой руки: кухонном гарнитуре,
+																навесных
+																полках, стеллажах и этажерках с комнатными растениями. Очистит от пыли
+																кухонную
+																вытяжку снаружи.</div>
+														</div>
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+													<td>
+														<img src="img/ic1.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Дополнительные работы:
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+													<td>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё кухонного гарнитура
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё холодильника
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+													<td>
+														500 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё духового шкафа
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+													<td>
+														1 500 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Мытьё вытяжки
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+													<td>
+														1 000 ₽
+													</td>
+												</tr>
+												<tr>
+													<td>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+													<td>
+														<a href="#" class="info__btn button" data-text="Оставить заявку">
+															Оставить заявку
+														</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div style="display:none;">
+		<div class="box-modal" id="popup-call3">
+			<div class="box-modal__close articmodal-close">
+				<img src="img/close.svg" alt="">
+			</div>
+			<div class="popup-call__box">
+
+				<h2 class="popup__name">
+					Выберите город
+				</h2>
+				<div class="popup__search">
+					<input type="text" class="search-box" placeholder="Найти город" oninput="filterCities()">
+					<div class="city-list" id="cityList">
+						<div class="city-group" data-letter="А">
+							<h3>А</h3>
+							<div class="city">Архангельск</div>
+							<div class="city">Астрахань</div>
+							<div class="city">Анапа</div>
+						</div>
+						<div class="city-group" data-letter="Б">
+							<h3>Б</h3>
+							<div class="city">Барнаул</div>
+							<div class="city">Белгород</div>
+							<div class="city">Брянск</div>
+						</div>
+						<div class="city-group" data-letter="В">
+							<h3>В</h3>
+							<div class="city">Владивосток</div>
+							<div class="city">Волгоград</div>
+							<div class="city">Воронеж</div>
+						</div>
+						<div class="city-group" data-letter="Г">
+							<h3>Г</h3>
+							<div class="city">Грозный</div>
+							<div class="city">Геленджик</div>
+							<div class="city">Гатчина</div>
+						</div>
+						<div class="city-group" data-letter="Д">
+							<h3>Д</h3>
+							<div class="city">Дзержинск</div>
+							<div class="city">Домодедово</div>
+							<div class="city">Димитровград</div>
+						</div>
+						<div class="city-group" data-letter="Е">
+							<h3>Е</h3>
+							<div class="city">Екатеринбург</div>
+							<div class="city">Ессентуки</div>
+							<div class="city">Елец</div>
+						</div>
+						<div class="city-group" data-letter="Ж">
+							<h3>Ж</h3>
+							<div class="city">Железнодорожный</div>
+							<div class="city">Жуковский</div>
+							<div class="city">Жигулёвск</div>
+						</div>
+						<div class="city-group" data-letter="З">
+							<h3>З</h3>
+							<div class="city">Златоуст</div>
+							<div class="city">Зеленоград</div>
+							<div class="city">Зеленодольск</div>
+						</div>
+						<div class="city-group" data-letter="И">
+							<h3>И</h3>
+							<div class="city">Ижевск</div>
+							<div class="city">Иваново</div>
+							<div class="city">Иноземцево</div>
+						</div>
+						<div class="city-group" data-letter="К">
+							<h3>К</h3>
+							<div class="city">Казань</div>
+							<div class="city">Калининград</div>
+							<div class="city">Кемерово</div>
+						</div>
+						<div class="city-group" data-letter="Л">
+							<h3>Л</h3>
+							<div class="city">Липецк</div>
+							<div class="city">Люберцы</div>
+							<div class="city">Лобня</div>
+						</div>
+						<div class="city-group" data-letter="М">
+							<h3>М</h3>
+							<div class="city">Москва</div>
+							<div class="city">Мурманск</div>
+							<div class="city">Магнитогорск</div>
+						</div>
+						<div class="city-group" data-letter="Н">
+							<h3>Н</h3>
+							<div class="city">Новосибирск</div>
+							<div class="city">Нижний Новгород</div>
+							<div class="city">Набережные Челны</div>
+						</div>
+						<div class="city-group" data-letter="О">
+							<h3>О</h3>
+							<div class="city">Омск</div>
+							<div class="city">Оренбург</div>
+							<div class="city">Орёл</div>
+						</div>
+						<div class="city-group" data-letter="П">
+							<h3>П</h3>
+							<div class="city">Пермь</div>
+							<div class="city">Пенза</div>
+							<div class="city">Петрозаводск</div>
+						</div>
+						<div class="city-group" data-letter="Р">
+							<h3>Р</h3>
+							<div class="city">Ростов-на-Дону</div>
+							<div class="city">Рязань</div>
+							<div class="city">Рубцовск</div>
+						</div>
+						<div class="city-group" data-letter="С">
+							<h3>С</h3>
+							<div class="city">Санкт-Петербург</div>
+							<div class="city">Самара</div>
+							<div class="city">Саратов</div>
+						</div>
+						<div class="city-group" data-letter="Т">
+							<h3>Т</h3>
+							<div class="city">Томск</div>
+							<div class="city">Тула</div>
+							<div class="city">Тверь</div>
+						</div>
+						<div class="city-group" data-letter="У">
+							<h3>У</h3>
+							<div class="city">Уфа</div>
+							<div class="city">Ульяновск</div>
+							<div class="city">Уссурийск</div>
+						</div>
+						<div class="city-group" data-letter="Х">
+							<h3>Х</h3>
+							<div class="city">Хабаровск</div>
+							<div class="city">Химки</div>
+							<div class="city">Ханты-Мансийск</div>
+						</div>
+						<div class="city-group" data-letter="Ч">
+							<h3>Ч</h3>
+							<div class="city">Челябинск</div>
+							<div class="city">Чебоксары</div>
+							<div class="city">Чита</div>
+						</div>
+						<div class="city-group" data-letter="Ш">
+							<h3>Ш</h3>
+							<div class="city">Шахты</div>
+							<div class="city">Шуя</div>
+							<div class="city">Шадринск</div>
+						</div>
+						<div class="city-group" data-letter="Ю">
+							<h3>Ю</h3>
+							<div class="city">Южно-Сахалинск</div>
+							<div class="city">Юрга</div>
+							<div class="city">Южноуральск</div>
+						</div>
+						<div class="city-group" data-letter="Я">
+							<h3>Я</h3>
+							<div class="city">Ярославль</div>
+							<div class="city">Ялта</div>
+							<div class="city">Якутск</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div style="display:none;">
+		<div class="box-modal" id="popup-thank">
+			<div class="popup-call__box">
+				<img src="img/thank.svg" alt="">
+				<p>
+					Ваша заявка <br>
+					успешно отправлена
+				</p>
+				<div class="box-modal__close articmodal-close">
+					Хорошо
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+	<script src="js/all.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/vjik/arcticModal@master/arcticmodal/jquery.arcticmodal.js"></script>
+	<!-- Подключен файл-валидатор, для проверки формы на заполненность  -->
+	<script type="text/javascript"
+		src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+</body>
+
+</html>

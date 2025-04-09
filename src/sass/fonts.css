@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('/fonts/InterTight-Regular.eot');
+    src: url('/fonts/InterTight-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/InterTight-Regular.woff2') format('woff2'),
+        url('/fonts/InterTight-Regular.woff') format('woff'),
+        url('/fonts/InterTight-Regular.ttf') format('truetype'),
+        url('/fonts/InterTight-Regular.svg#InterTight-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('/fonts/InterTight-Bold.eot');
+    src: url('/fonts/InterTight-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/InterTight-Bold.woff2') format('woff2'),
+        url('/fonts/InterTight-Bold.woff') format('woff'),
+        url('/fonts/InterTight-Bold.ttf') format('truetype'),
+        url('/fonts/InterTight-Bold.svg#InterTight-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AA Stetica';
+    src: url('/fonts/AAStetica-Bold.eot');
+    src: url('/fonts/AAStetica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/AAStetica-Bold.woff2') format('woff2'),
+        url('/fonts/AAStetica-Bold.woff') format('woff'),
+        url('/fonts/AAStetica-Bold.ttf') format('truetype'),
+        url('/fonts/AAStetica-Bold.svg#AAStetica-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
