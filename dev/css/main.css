@@ -965,7 +965,10 @@ ul.info li {
         position: relative;
         top: 2px; }
   .nav__city {
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.5s; }
+    .nav__city:hover {
+      color: #114A8A; }
   .nav__tel {
     color: #0b1827;
     font-size: 14px;
@@ -3229,7 +3232,7 @@ input:checked + .slider:before {
         top: 5.5px; }
 
 .local {
-  padding: 60px 0 0; }
+  padding: 60px 0; }
   .local h2 {
     margin-bottom: 40px; }
   .local__wrap {
@@ -4549,7 +4552,7 @@ input:checked + .slider:before {
     height: auto;
     background: transparent; }
   .tabs__dropdown {
-    width: 100%;
+    width: calc(100% - 7.5%);
     height: 48px;
     padding: 14px 16px;
     background: #e8edf4;
@@ -4560,7 +4563,8 @@ input:checked + .slider:before {
     font-weight: 400;
     line-height: 130%;
     position: relative;
-    z-index: 5; }
+    z-index: 5;
+    margin-left: 15px; }
     .tabs__dropdown:focus {
       outline: none !important; }
     .tabs__dropdown option {
@@ -4650,20 +4654,24 @@ input:checked + .slider:before {
   .art__block .button:after {
     left: 0;
     text-align: center; }
+  .info .container {
+    padding: 0; }
+  .info .sub {
+    margin-left: 15px; }
+  .info h2 {
+    margin-left: 15px;
+    width: 100%;
+    max-width: 300px; }
+  #popup-call2 .popup-call__box {
+    padding-left: 0;
+    left: 0;
+    width: 100.6%; }
+  .info__scroll {
+    padding-left: 15px;
+    padding-right: 15px; }
   .info .tabs__pane_show {
-    position: relative; }
-    .info .tabs__pane_show:after, .info .tabs__pane_show:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 28px;
-      height: 100%;
-      z-index: 1;
-      pointer-events: none; }
-    .info .tabs__pane_show:before {
-      left: 0;
-      background: linear-gradient(to right, white, rgba(255, 255, 255, 0)); }
-    .info .tabs__pane_show:after {
-      right: 0;
-      width: 73px;
-      background: linear-gradient(to left, white, rgba(255, 255, 255, 0)); } }
+    position: relative; } }
+
+@media screen and (max-width: 380px) {
+  .tabs__dropdown {
+    width: calc(100% - 8.3%); } }

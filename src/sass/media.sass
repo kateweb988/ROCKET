@@ -907,7 +907,7 @@
       height: auto
       background: transparent
    .tabs__dropdown
-      width: 100%
+      width: calc(100% - 7.5%)
       height: 48px
       // overflow: hidden !important
       padding: 14px 16px
@@ -920,6 +920,7 @@
       line-height: 130%
       position: relative
       z-index: 5
+      margin-left: 15px
       &:focus 
          outline: none !important
       option
@@ -1009,29 +1010,39 @@
    .art__block .button:after 
       left: 0
       text-align: center
+   .info 
+      .container
+         padding: 0
+      .sub
+         margin-left: 15px
+      h2 
+         margin-left: 15px
+         width: 100%
+         max-width: 300px
+   #popup-call2 .popup-call__box
+      padding-left: 0
+      left: 0
+      width: 100.6%
+   .info__scroll
+      padding-left: 15px
+      padding-right: 15px
    .info .tabs__pane_show
       position: relative
-      &:after, &:before
-         content: ""
-         position: absolute
-         top: 0
-         width: 28px
-         height: 100%
-         z-index: 1
-         pointer-events: none
-      &:before 
-         left: 0
-         background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0))
-      &:after 
-         right: 0
-         width: 73px
-         background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0))
-      // &::after
+      // &:after, &:before
+      //    content: ""
       //    position: absolute
       //    top: 0
-      //    right: -10px
+      //    width: 28px
       //    height: 100%
-      //    width: 60px
-      //    display: block
-      //    content: ""
-      //    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) -77%, #FFFFFF 100%)
+      //    z-index: 1
+      //    pointer-events: none
+      // &:before 
+      //    left: 0
+      //    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0))
+      // &:after 
+      //    right: 0
+      //    width: 73px
+      //    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0))
+@media screen and (max-width: 380px)
+   .tabs__dropdown
+      width: calc(100% - 8.3%)
